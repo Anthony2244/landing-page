@@ -1,0 +1,30 @@
+:root {
+  --hero-footer: #1f2937;
+  --hero-main-text: #f9faf8;
+  --hero-secondary-text: #e5e7eb;
+  --header-logo-text: #f9faf8;
+  --button-color: #3882f6;
+  --information-header-text: #1f2937;
+  --quote-section: #e5e7eb;
+  --quote-text: #1f2937;
+}
+
+.hero-main {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.hero-secondary {
+  font-size: 18px;
+}
+.header-logo {
+  font-size: 24px;
+}
+.info-header {
+  font-size: 36px;
+  font-weight: bolder;
+}
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+}
