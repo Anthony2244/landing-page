@@ -4,24 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Landing page</title>
   </head>
   <body>
     <header>
-      <nav>
-        <span class="logo">Header logo</span>
-        <div class="links">
-          <ul>
-            header link one
-          </ul>
-          <ul>
-            header link two
-          </ul>
-          <ul>
-            header link three
-          </ul>
+      <div class="hero">
+        <nav class="nav">
+          <span class="header-logo">Header logo</span>
+          <div class="links hero-secondary">
+            <ul>
+              <li>header link one</li>
+              <li>header link two</li>
+              <li>header link three</li>
+            </ul>
+          </div>
+        </nav>
+        <div class="hero-flex">
+          <div class="hero-left">
+            <h1 class="hero-main">This website is awesome</h1>
+            <p class="hero-secondary">
+              This website has some subtext that goes here under the main title.
+              It's a smaller font and the color is lower contrast
+            </p>
+            <button class="btn">Sign up</button>
+          </div>
+          <div class="hero-right">
+            <img src="./main-image.jpg" alt="This is an image alt" />
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
   </body>
 </html>

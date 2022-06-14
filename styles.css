@@ -8,16 +8,68 @@
   --quote-section: #e5e7eb;
   --quote-text: #1f2937;
 }
-
+body {
+  margin: 0px;
+}
+.hero {
+  background-color: var(--hero-footer);
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav ul,
+li {
+  list-style-type: none;
+  display: inline;
+}
+.hero-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
 .hero-main {
   font-size: 48px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
+  color: var(--hero-main-text);
+  margin-bottom: 0px;
 }
 .hero-secondary {
   font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--hero-secondary-text);
+  margin: 0px;
+}
+.hero-left {
+  width: 500px;
+}
+.hero-right {
+  width: 480px;
+}
+.hero-right img {
+  width: inherit;
+}
+.btn {
+  color: white;
+  background-color: var(--button-color);
+  margin-top: 10px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
 }
 .header-logo {
   font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--header-logo-text);
 }
 .info-header {
   font-size: 36px;
