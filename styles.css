@@ -7,9 +7,24 @@
   --information-header-text: #1f2937;
   --quote-section: #e5e7eb;
   --quote-text: #1f2937;
+  --information-background: #f9faf8;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 body {
-  margin: 0px;
+  line-height: 1;
 }
 .hero {
   background-color: var(--hero-footer);
@@ -71,12 +86,58 @@ li {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--header-logo-text);
 }
+.secondary {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--information-background);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.secondary-top {
+  display: flex;
+  justify-content: center;
+}
 .info-header {
   font-size: 36px;
   font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rounded-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  border-radius: 8px;
+}
+.caption {
+  margin-left: 25%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rounded {
+  border-radius: 18px;
+  border: 6px solid var(--button-color);
+}
+.quote-section {
+  display: flex;
+  background-color: var(--quote-section);
+  justify-content: center;
 }
 .quote {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 36px;
   font-style: italic;
-  font-weight: lighter;
+  font-weight: 100;
+  color: var(--quote-text);
+  width: 800px;
+}
+.author {
+  display: block;
+  color: black;
+  font-style: normal;
+  font-weight: bold;
+  text-align: end;
+}
+.author::before {
+  content: "-";
 }
